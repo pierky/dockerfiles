@@ -1,14 +1,20 @@
-# Overview
+# Tag `latest`
 
-This image is based on the master branch of [BIRD](https://github.com/BIRD/bird/), that is currently including the [Matt Griswold](https://github.com/grizz)'s [BGP Large communities patch](https://20c.com/~grizz/bird/add_bgp_large_communities.patch). It `EXPOSE`s port 179 and mounts host's directory `./bird` in the container's `/etc/bird` directory; here the `bird.conf` is used to give `bird` the startup configuration and `log` is used by the daemon to write its log.
+This image is based on the master branch of [BIRD](https://github.com/BIRD/bird/). It `EXPOSE`s port 179 and mounts host's directory `./bird` in the container's `/etc/bird` directory; here the `bird.conf` is used to give `bird` the startup configuration and `log` is used by the daemon to write its log.
 
 It has been created to run a playground to test BGP Large Communities: https://github.com/pierky/bgp-large-communities-playground
 
+# Tag `1.6.3`
+
+This image is based on the 1.6.3 version of [BIRD](https://github.com/BIRD/bird/). Both the IPv4 and IPv6 binaries are compiled here.
+
+It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
+
 # Disclaimer
 
-This image has been created with the only purpose of being used in a "playground", for labs and interoperability tests. It does not implement any security best practice. Use it at your own risk.
+These images has been created with the only purpose of being used in a test environment, for labs and interoperability tests. They do not implement any security best practice. Use them at your own risk.
 
-# How to use this image
+# How to use the `latest` image
 
 Put the [BIRD startup config](http://bird.network.cz/?get_doc&f=bird.html) into `bird/bird.conf`...
 
