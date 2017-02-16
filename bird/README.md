@@ -10,6 +10,10 @@ This image is based on the 1.6.3 version of [BIRD](https://github.com/BIRD/bird/
 
 It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
 
+# Tag `1.6.3-with-rtrlib`
+
+Same as above, but with [rtrlib](https://github.com/rtrlib/rtrlib).
+
 # Disclaimer
 
 These images has been created with the only purpose of being used in a test environment, for labs and interoperability tests. They do not implement any security best practice. Use them at your own risk.
