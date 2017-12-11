@@ -14,9 +14,9 @@ It has been created to run live tests for the ARouteServer project: https://gith
 
 Same as above, but with [rtrlib](https://github.com/rtrlib/rtrlib).
 
-# Tag `2.0.0-pre1`
+# Tag `2.0.0`
 
-This image is based on the 2.0.0-pre1 version of [BIRD](https://github.com/BIRD/bird/). Both the IPv4 and IPv6 binaries are compiled here.
+This image is based on the 2.0.0 version of [BIRD](https://github.com/BIRD/bird/).
 
 It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
 
