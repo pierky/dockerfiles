@@ -4,6 +4,12 @@ This image is based on the master branch of [BIRD](https://github.com/BIRD/bird/
 
 It has been created to run a playground to test BGP Large Communities: https://github.com/pierky/bgp-large-communities-playground
 
+# Tag `1.6.4`
+
+This image is based on the 1.6.4 version of [BIRD](https://github.com/BIRD/bird/). Both the IPv4 and IPv6 binaries are compiled here.
+
+It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
+
 # Tag `1.6.3`
 
 This image is based on the 1.6.3 version of [BIRD](https://github.com/BIRD/bird/). Both the IPv4 and IPv6 binaries are compiled here.
