@@ -13,7 +13,11 @@ RUN apt-get update && apt-get install -y \
 	libreadline-dev \
 	libncurses5-dev \
 	m4 \
-	unzip
+	unzip \
+	procps \
+	tcpdump \
+	net-tools \
+	vim
 
 WORKDIR /root
 RUN curl -O -L https://github.com/BIRD/bird/archive/v1.6.3.zip
