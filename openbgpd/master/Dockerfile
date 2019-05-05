@@ -37,4 +37,4 @@ RUN cd /root/openbgpd-portable && \
     make && \
     make install
 
-CMD /usr/local/sbin/bgpd -f /etc/bgpd/bgpd.conf
+CMD /usr/local/sbin/bgpd -f /etc/bgpd/bgpd.conf -d
