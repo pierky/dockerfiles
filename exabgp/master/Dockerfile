@@ -1,4 +1,4 @@
-FROM python:2
+FROM python:3
 
 MAINTAINER Pier Carlo Chiodi <pierky@pierky.com>
 
