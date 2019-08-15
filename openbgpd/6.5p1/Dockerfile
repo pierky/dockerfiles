@@ -29,11 +29,11 @@ RUN groupadd _bgpd && \
 RUN mkdir /etc/bgpd
 
 WORKDIR /root
-RUN curl -L https://github.com/openbgpd-portable/openbgpd-portable/archive/6.5p0.zip -o 6.5p0.zip
+RUN curl -L https://github.com/openbgpd-portable/openbgpd-portable/archive/6.5p1.zip -o 6.5p1.zip
 
-RUN unzip 6.5p0.zip
+RUN unzip 6.5p1.zip
 
-RUN cd /root/openbgpd-portable-6.5p0 && \
+RUN cd /root/openbgpd-portable-6.5p1 && \
     ./autogen.sh && \
     YACC=byacc ./configure --sysconfdir=/etc/bgpd && \
     make && \
