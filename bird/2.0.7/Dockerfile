@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 	flex \
 	libreadline-dev \
 	libncurses5-dev \
+	libssh-dev \
 	m4 \
 	unzip
 
@@ -26,7 +27,7 @@ RUN mkdir /etc/bird
 RUN cd bird-2.0.7 && \
 	autoconf && \
 	autoheader && \
-	./configure && \
+	./configure --enable-libssh && \
 	make && \
 	make install
 
