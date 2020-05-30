@@ -4,6 +4,10 @@ This image is based on the master branch of [ExaBGP](https://github.com/Exa-Netw
 
 It has been created to run a playground to test BGP Large Communities: https://github.com/pierky/bgp-large-communities-playground
 
+# Tag `4.2.7`
+
+This image is based on the 4.2.7 version of [ExaBGP](https://github.com/Exa-Networks/exabgp). It `EXPOSE`s port 179 and mounts host's directory `./exabgp` in the container's `/etc/exabgp` directory; here the `exabgp.conf` is used to give `exabgp` the startup configuration and `log` is used by the daemon to write its log.
+
 # Tag `3.4.19`
 
 This image is based on the 3.4.19 version of [ExaBGP](https://github.com/Exa-Networks/exabgp). It `EXPOSE`s port 179 and mounts host's directory `./exabgp` in the container's `/etc/exabgp` directory; here the `exabgp.conf` is used to give `exabgp` the startup configuration and `log` is used by the daemon to write its log.
