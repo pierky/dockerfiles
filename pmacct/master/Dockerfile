@@ -1,3 +1,5 @@
+# DEPRECATED: please use the official repo https://hub.docker.com/u/pmacct
+
 FROM debian:stable
 
 MAINTAINER Pier Carlo Chiodi <pierky@pierky.com>
