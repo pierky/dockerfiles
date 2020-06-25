@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please use the official one: https://hub.docker.com/u/pmacct 
+
 # Overview
 
 This image is based on the master branch of [pmacct](https://github.com/pmacct/pmacct). It mounts host's directory `./pmacct` in the container's `/etc/pmacct` directory; here the `pmacctd.conf` is used to give `pmacctd` the startup configuration and `log` and `bgp.log` are used by the daemon to write its logs.
