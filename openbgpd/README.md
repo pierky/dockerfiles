@@ -2,6 +2,12 @@
 
 This image is based on the master branch of [OpenBGPD Portable](https://github.com/openbgpd-portable/). It `EXPOSE`s port 179 and mounts host's directory `./bgpd` in the container's `/etc/bgpd` directory; here the `bgpd.conf` is used to give `bgpd` the startup configuration.
 
+# Tag `6.9p0`
+
+This image is based on the 6.9p0 version of [OpenBGPD Portable](https://github.com/openbgpd-portable/).
+
+It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
+
 # Tag `6.8p1`
 
 This image is based on the 6.8p1 version of [OpenBGPD Portable](https://github.com/openbgpd-portable/).
