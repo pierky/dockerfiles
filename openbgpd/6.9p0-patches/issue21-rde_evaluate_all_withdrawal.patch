@@ -1,0 +1,48 @@
+Index: rde_update.c
+===================================================================
+RCS file: /cvs/src/usr.sbin/bgpd/rde_update.c,v
+retrieving revision 1.126
+diff -u -p -r1.126 rde_update.c
+--- rde_update.c    20 Apr 2021 11:19:56 -0000  1.126
++++ rde_update.c    4 May 2021 07:39:44 -0000
+@@ -101,17 +101,23 @@ up_generate_updates(struct filter_head *
+    struct filterstate  state;
+    struct bgpd_addr    addr;
+    int         need_withdraw;
++   uint8_t         prefixlen;
+
+-again:
+    if (new == NULL) {
+        if (old == NULL)
+-           /* no prefix to withdraw */
++           /* no prefix to update or withdraw */
+            return;
++       pt_getaddr(old->pt, &addr);
++       prefixlen = old->pt->prefixlen;
++   } else {
++       pt_getaddr(new->pt, &addr);
++       prefixlen = new->pt->prefixlen;
++   }
+
++again:
++   if (new == NULL) {
+        /* withdraw prefix */
+-       pt_getaddr(old->pt, &addr);
+-       if (prefix_adjout_withdraw(peer, &addr,
+-           old->pt->prefixlen) == 1) {
++       if (prefix_adjout_withdraw(peer, &addr, prefixlen) == 1) {
+            peer->prefix_out_cnt--;
+            peer->up_wcnt++;
+        }
+@@ -143,10 +149,8 @@ again:
+        rde_filterstate_prep(&state, prefix_aspath(new),
+            prefix_communities(new), prefix_nexthop(new),
+            prefix_nhflags(new));
+-       pt_getaddr(new->pt, &addr);
+        if (rde_filter(rules, peer, prefix_peer(new), &addr,
+-           new->pt->prefixlen, prefix_vstate(new), &state) ==
+-           ACTION_DENY) {
++           prefixlen, prefix_vstate(new), &state) == ACTION_DENY) {
+            rde_filterstate_clean(&state);
+            if (peer->conf.flags & PEERFLAG_EVALUATE_ALL)
+                new = LIST_NEXT(new, entry.list.rib);
