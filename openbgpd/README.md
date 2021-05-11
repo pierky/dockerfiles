@@ -12,6 +12,8 @@ This image is based on the 6.9p0 version of [OpenBGPD Portable](https://github.c
 
 - *issue21-rde_evaluate_all_reload.patch*: advertisement of 2nd best routes on reload with `rde evaluate all` ([issue #21 on GitHub](https://github.com/openbgpd-portable/openbgpd-portable/issues/21) and ["bgpd better reload behaviour"](https://marc.info/?l=openbsd-tech&m=162021735205669&w=2) post on openbsd-tech)
 
+- *issue21-rde_evaluate_all_withdrawal_post_reload.patch* withdrawal of 2nd best routes after a reload with `rde evaluate all` ([issue #21 on GitHub](https://github.com/openbgpd-portable/openbgpd-portable/issues/21) and ["bgpd fix for rde evaluate all"](https://marc.info/?l=openbsd-tech&m=162072314804091&w=2) post on openbsd-tech)
+
 - *rtr-non-blocking-connect.patch* non blocking `connect()` call for RTR session establishment () (["bgpd behaviour when RTR endpoint is not available"](https://marc.info/?l=openbgpd-users&m=161997334304946&w=2) post on openbgpd-users and ["bgpd, non-blocking rtr connect"](https://marc.info/?l=openbsd-tech&m=162005636502085&w=2) post on openbsd-tech)
 
 It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver

@@ -42,6 +42,7 @@ RUN cd /root/openbgpd-portable-6.9p0 && \
     patch -l < /root/issue23-rtr.patch && \
     patch -l < /root/issue21-rde_evaluate_all_withdrawal.patch && \
     patch -l < /root/issue21-rde_evaluate_all_reload.patch && \
+    patch -l < /root/issue21-rde_evaluate_all_withdrawal_post_reload.patch && \
     patch -l < /root/rtr-non-blocking-connect.patch && \
     cd ../../ && \
     make && \
