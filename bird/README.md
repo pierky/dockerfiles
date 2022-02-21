@@ -50,6 +50,12 @@ This image is based on the 2.0.8 version of [BIRD](https://github.com/BIRD/bird/
 
 It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
 
+# Tag `2.0.9`
+
+This image is based on the 2.0.9 version of [BIRD](https://github.com/BIRD/bird/).
+
+It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
+
 # Disclaimer
 
 These images has been created with the only purpose of being used in a test environment, for labs and interoperability tests. They do not implement any security best practice. Use them at your own risk.
