@@ -62,6 +62,12 @@ This image is based on the 2.0.10 version of [BIRD](https://github.com/BIRD/bird
 
 It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
 
+# Tag `2.13`
+
+This image is based on the 2.13 version of [BIRD](https://github.com/BIRD/bird/).
+
+It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
+
 # Tag `3.0-alpha0`
 
 This image is based on the [3.0-alpha0](https://www.mail-archive.com/bird-users@network.cz/msg06620.html) version of [BIRD](https://github.com/BIRD/bird/).
