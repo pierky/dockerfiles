@@ -6,6 +6,8 @@ This image is based on the master branch of [OpenBGPD Portable](https://github.c
 
 This image is based on the 8.2 version of [OpenBGPD Portable](https://github.com/openbgpd-portable/).
 
+**Please note**: this image includes the patch released to address this issue: https://github.com/openbgpd-portable/openbgpd-portable/issues/64
+
 It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
 
 # Tag `8.0`

@@ -1,0 +1,20 @@
+Index: rde_community.c
+===================================================================
+RCS file: /cvs/src/usr.sbin/bgpd/rde_community.c,v
+retrieving revision 1.13
+diff -u -p -r1.13 rde_community.c
+--- rde_community.c	12 Jul 2023 14:45:43 -0000	1.13
++++ rde_community.c	10 Oct 2023 13:43:03 -0000
+@@ -556,10 +556,9 @@ community_writebuf(struct rde_community 
+ 	start = -1;
+ 	for (l = 0; l < comm->nentries; l++) {
+ 		cp = &comm->communities[l];
+-
+-		if (ebgp && non_transitive_ext_community(cp))
+-			continue;
+ 		if ((uint8_t)cp->flags == t) {
++			if (ebgp && non_transitive_ext_community(cp))
++				continue;
+ 			num++;
+ 			if (start == -1)
+ 				start = l;

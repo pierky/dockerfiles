@@ -34,9 +34,14 @@ RUN curl -L https://github.com/openbgpd-portable/openbgpd-portable/archive/8.2.z
 
 RUN unzip 8.2.zip
 
+COPY *.patch /root/
+
 RUN cd /root/openbgpd-portable-8.2 && \
     ./autogen.sh && \
     YACC=byacc ./configure --sysconfdir=/etc/bgpd && \
+    cd src/bgpd/ && \
+    patch -l < /root/issue64.patch && \
+    cd ../../ && \
     make && \
     make install
 
