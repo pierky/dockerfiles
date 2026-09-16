@@ -116,6 +116,18 @@ This image is based on the [3.1.2](https://www.mail-archive.com/bird-users@netwo
 
 It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
 
+# Tag `3.2.3`
+
+This image is based on the [3.2.3](https://www.mail-archive.com/bird-users@network.cz/msg09298.html) version of [BIRD](https://github.com/BIRD/bird/).
+
+It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
+
+# Tag `3.3.2`
+
+This image is based on the [3.3.2](https://www.mail-archive.com/bird-users@network.cz/msg09298.html) version of [BIRD](https://github.com/BIRD/bird/).
+
+It has been created to run live tests for the ARouteServer project: https://github.com/pierky/arouteserver
+
 
 # Disclaimer
 
